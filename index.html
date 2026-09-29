@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sujan Mestha | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f6fb;
+            color: #172033;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #172033;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            color: #818cf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #818cf8;
+        }
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 8%;
+            gap: 40px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero span {
+            color: #4f46e5;
+        }
+
+        .hero p {
+            color: #64748b;
+            max-width: 550px;
+            margin-bottom: 25px;
+        }
+
+        .hero img {
+            width: 280px;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 6px solid #818cf8;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #4f46e5;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .about, .education, .skills, .contact {
+            background: white;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            text-align: center;
+            max-width: 750px;
+            margin: auto;
+            color: #64748b;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #f4f6fb;
+            padding: 25px;
+            border-radius: 15px;
+            width: 280px;
+            text-align: center;
+            border: 1px solid #e2e8f0;
+        }
+
+        .card h3 {
+            color: #4f46e5;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #64748b;
+        }
+
+        .contact p {
+            text-align: center;
+            margin: 10px;
+        }
+
+        .contact a {
+            color: #4f46e5;
+        }
+
+        footer {
+            background: #172033;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 8px;
+                font-size: 14px;
+            }
+
+            .hero {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 35px;
+            }
+
+            .hero img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Sujan.</h2>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div>
+                <h1>Hello, I'm <span>Sujan Mestha</span></h1>
+                <p>
+                    I am an aspiring web developer passionate about
+                    designing and developing beautiful, user-friendly
+                    websites using modern web technologies.
+                </p>
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
+
+            <img src="photo.jpe"
+                 alt="Profile photo of Sujan Mestha">
+        </section>
+
+        <section class="about" id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a motivated student interested in web development
+                and UI/UX design. I enjoy learning new technologies,
+                solving problems, and creating responsive websites.
+                My goal is to become a professional web developer.
+            </p>
+        </section>
+
+        <section class="education" id="education">
+            <h2>Education</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Your Degree / Course</h3>
+                    <p>Your College Name</p>
+                    <p>Year of Study: 2024 - 2027</p>
+                </div>
+            </div>+
+        </section>
+
+        <section class="skills" id="skills">
+            <h2>My Skills</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>HTML5</h3>
+                    <p>Creating structured and semantic webpages.</p>
+                </div>
+
+                <div class="card">
+                    <h3>CSS3</h3>
+                    <p>Styling websites with responsive layouts.</p>
+                </div>
+
+                <div class="card">
+                    <h3>UI/UX Design</h3>
+                    <p>Designing user-friendly interfaces using Figma.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:your.email@example.com">
+                your.email@example.com</a></p>
+            <p>Location: India</p>
+            <p>GitHub: <a href="https://github.com/">
+                My GitHub Profile</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sujan Mestha | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
